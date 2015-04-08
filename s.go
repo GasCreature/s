@@ -54,7 +54,13 @@ func Open(fname string) *ChannelBuf {
 }
 
 func match(target, re string) []string {
-    return regexp.MustCompile(re).FindStringSubmatch(target)
+    r, error := regexp.Compile(re)
+    if error != nil {
+        debug.PrintStack()
+        log.Fatal(error)
+    }
+    match := r.FindStringSubmatch(target)
+    return match
 }
 
 func match1(target, re string) (bool, string) {
@@ -63,6 +69,7 @@ func match1(target, re string) (bool, string) {
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 2 {
         return true, match[1]
     }
@@ -75,6 +82,7 @@ func match2(target, re string) (bool, string, string) {
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 3 {
         return true, match[1], match[2]
     }
@@ -87,6 +95,7 @@ func match3(target, re string) (bool, string, string, string) {
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 4 {
         return true, match[1], match[2], match[3]
     }
@@ -99,6 +108,7 @@ func match4(target, re string) (bool, string, string, string, string) {
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 5 {
         return true, match[1], match[2], match[3], match[4]
     }
@@ -111,6 +121,7 @@ func match5(target, re string) (bool, string, string, string, string, string) {
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 6 {
         return true, match[1], match[2], match[3], match[4], match[5]
     }
@@ -123,6 +134,7 @@ func match6(target, re string) (bool, string, string, string, string, string, st
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 7 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6]
     }
@@ -135,6 +147,7 @@ func match7(target, re string) (bool, string, string, string, string, string, st
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 8 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7]
     }
@@ -147,6 +160,7 @@ func match8(target, re string) (bool, string, string, string, string, string, st
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 9 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8]
     }
@@ -159,6 +173,7 @@ func match9(target, re string) (bool, string, string, string, string, string, st
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 10 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9]
     }
@@ -171,6 +186,7 @@ func match10(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 11 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10]
     }
@@ -183,6 +199,7 @@ func match11(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 12 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11]
     }
@@ -195,6 +212,7 @@ func match12(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 13 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12]
     }
@@ -207,6 +225,7 @@ func match13(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 14 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13]
     }
@@ -219,6 +238,7 @@ func match14(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 15 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13], match[14]
     }
@@ -231,6 +251,7 @@ func match15(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 16 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13], match[14], match[15]
     }
@@ -243,6 +264,7 @@ func match16(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 17 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13], match[14], match[15], match[16]
     }
@@ -255,6 +277,7 @@ func match17(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 18 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13], match[14], match[15], match[16], match[17]
     }
@@ -267,6 +290,7 @@ func match18(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 19 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13], match[14], match[15], match[16], match[17], match[18]
     }
@@ -279,6 +303,7 @@ func match19(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 20 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13], match[14], match[15], match[16], match[17], match[18], match[19]
     }
@@ -291,6 +316,7 @@ func match20(target, re string) (bool, string, string, string, string, string, s
         debug.PrintStack()
         log.Fatal(error)
     }
+    match := r.FindStringSubmatch(target)
     if len(match) == 21 {
         return true, match[1], match[2], match[3], match[4], match[5], match[6], match[7], match[8], match[9], match[10], match[11], match[12], match[13], match[14], match[15], match[16], match[17], match[18], match[19], match[20]
     }
