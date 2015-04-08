@@ -53,7 +53,7 @@ func Open(fname string) *ChannelBuf {
     return &ChannelBuf{"", ch, false}
 }
 
-func match(target, re string) []string {
+func Match(target, re string) []string {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -63,7 +63,7 @@ func match(target, re string) []string {
     return match
 }
 
-func match1(target, re string) (bool, string) {
+func Match1(target, re string) (bool, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -76,7 +76,7 @@ func match1(target, re string) (bool, string) {
     return false, ""
 }
 
-func match2(target, re string) (bool, string, string) {
+func Match2(target, re string) (bool, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -89,7 +89,7 @@ func match2(target, re string) (bool, string, string) {
     return false, "", ""
 }
 
-func match3(target, re string) (bool, string, string, string) {
+func Match3(target, re string) (bool, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -102,7 +102,7 @@ func match3(target, re string) (bool, string, string, string) {
     return false, "", "", ""
 }
 
-func match4(target, re string) (bool, string, string, string, string) {
+func Match4(target, re string) (bool, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -115,7 +115,7 @@ func match4(target, re string) (bool, string, string, string, string) {
     return false, "", "", "", ""
 }
 
-func match5(target, re string) (bool, string, string, string, string, string) {
+func Match5(target, re string) (bool, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -128,7 +128,7 @@ func match5(target, re string) (bool, string, string, string, string, string) {
     return false, "", "", "", "", ""
 }
 
-func match6(target, re string) (bool, string, string, string, string, string, string) {
+func Match6(target, re string) (bool, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -141,7 +141,7 @@ func match6(target, re string) (bool, string, string, string, string, string, st
     return false, "", "", "", "", "", ""
 }
 
-func match7(target, re string) (bool, string, string, string, string, string, string, string) {
+func Match7(target, re string) (bool, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -154,7 +154,7 @@ func match7(target, re string) (bool, string, string, string, string, string, st
     return false, "", "", "", "", "", "", ""
 }
 
-func match8(target, re string) (bool, string, string, string, string, string, string, string, string) {
+func Match8(target, re string) (bool, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -167,7 +167,7 @@ func match8(target, re string) (bool, string, string, string, string, string, st
     return false, "", "", "", "", "", "", "", ""
 }
 
-func match9(target, re string) (bool, string, string, string, string, string, string, string, string, string) {
+func Match9(target, re string) (bool, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -180,7 +180,7 @@ func match9(target, re string) (bool, string, string, string, string, string, st
     return false, "", "", "", "", "", "", "", "", ""
 }
 
-func match10(target, re string) (bool, string, string, string, string, string, string, string, string, string, string) {
+func Match10(target, re string) (bool, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -193,7 +193,7 @@ func match10(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", ""
 }
 
-func match11(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string) {
+func Match11(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -206,7 +206,7 @@ func match11(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match12(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match12(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -219,7 +219,7 @@ func match12(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match13(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match13(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -232,7 +232,7 @@ func match13(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match14(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match14(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -245,7 +245,7 @@ func match14(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match15(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match15(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -258,7 +258,7 @@ func match15(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match16(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match16(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -271,7 +271,7 @@ func match16(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match17(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match17(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -284,7 +284,7 @@ func match17(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match18(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match18(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -297,7 +297,7 @@ func match18(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match19(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match19(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
@@ -310,7 +310,7 @@ func match19(target, re string) (bool, string, string, string, string, string, s
     return false, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
 }
 
-func match20(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
+func Match20(target, re string) (bool, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string, string) {
     r, error := regexp.Compile(re)
     if error != nil {
         debug.PrintStack()
